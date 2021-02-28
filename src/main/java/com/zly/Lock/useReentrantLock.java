@@ -4,7 +4,7 @@ import java.util.*;
 import java.util.concurrent.locks.ReentrantLock;
 
 public class useReentrantLock {
-    private final static ReentrantLock reentrantLock = new ReentrantLock();
+    private final static ReentrantLock reentrantLock = new ReentrantLock(true);
 
     public static void main(String[] args) throws InterruptedException{
         final Map<Integer, String> unsafe = new HashMap<Integer, String>();
